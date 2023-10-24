@@ -1,0 +1,111 @@
+/* Common styles for all screen sizes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoBv5i-WWdUi-IOvWhM5jw8XzAF_ITcljrA&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 0; /* Reduced padding for the navigation bar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px; /* Slightly reduced font size for the navigation links */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff7f50;
+}
+
+section p {
+    font-size: 16px;
+    color: #555;
+}
+
+section#service ul {
+    color: #85ee16; 
+}
+
+section#service li {
+    margin: 10px 0;
+}
+
+section#contact ul {
+    color: #220bf2; 
+}
+
+section#contact li {
+    margin: 10px 0;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+}
+
+/* Additional responsiveness for mobile screens */
+@media (max-width: 480px) {
+    section h1 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 12px;
+    }
+}
